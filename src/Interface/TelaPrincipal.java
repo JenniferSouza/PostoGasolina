@@ -131,7 +131,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setText("SELECIONE O TIPO DE COMBUSTÍVEL:");
+        jLabel1.setText("Selecione o tipo de combustivel:");
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(395, 16, -1, -1));
 
         jRadioButtonDiesel.setBackground(new java.awt.Color(255, 255, 255));
@@ -141,46 +141,51 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jRadioButtonGasolina.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroupTipoCombustiivel.add(jRadioButtonGasolina);
-        jRadioButtonGasolina.setText("GASOLINA");
+        jRadioButtonGasolina.setText("Gasolina");
         jPanel2.add(jRadioButtonGasolina, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 50, -1, -1));
 
         jRadioButtonEtanol.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroupTipoCombustiivel.add(jRadioButtonEtanol);
-        jRadioButtonEtanol.setText("ETANOL");
+        jRadioButtonEtanol.setText("Etanol");
+        jRadioButtonEtanol.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButtonEtanolActionPerformed(evt);
+            }
+        });
         jPanel2.add(jRadioButtonEtanol, new org.netbeans.lib.awtextra.AbsoluteConstraints(547, 50, -1, -1));
 
-        jLabel2.setText("PREÇO POR LITRO:");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 13, -1, -1));
+        jLabel2.setText("Preço por litro:");
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 13, 120, -1));
 
-        jLabel3.setText("DIESEL");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 36, -1, -1));
+        jLabel3.setText("Diesel");
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 36, 60, -1));
 
-        jLabel4.setText("GASOLINA");
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 82, -1, -1));
+        jLabel4.setText("Gasolina");
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 82, 60, -1));
 
-        jLabel5.setText("ETANOL");
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 59, -1, -1));
+        jLabel5.setText("Etanol");
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 59, 60, -1));
 
         jLabel6.setText("R$ 2.00");
         jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 36, -1, -1));
 
         jLabel7.setText("R$4,00");
-        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(88, 82, -1, -1));
+        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 80, 50, -1));
 
         jLabel8.setText("R$ 3,00");
         jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 59, -1, -1));
 
-        jLabel10.setText("LITROS");
+        jLabel10.setText("Litros");
         jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(461, 86, -1, -1));
 
-        jLabel17.setText("TOTAL COMBUSTÍVEL:");
+        jLabel17.setText("Total:");
         jPanel2.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(395, 141, -1, -1));
 
         jLabelTotalCombustivel.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabelTotalCombustivel.setForeground(new java.awt.Color(255, 51, 51));
         jPanel2.add(jLabelTotalCombustivel, new org.netbeans.lib.awtextra.AbsoluteConstraints(531, 133, 85, 24));
 
-        jButtonAbastecer.setText("+ CARRINHO");
+        jButtonAbastecer.setText("+ Carrinho");
         jButtonAbastecer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonAbastecerActionPerformed(evt);
@@ -205,10 +210,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 810, 160));
 
-        jLabel9.setText("SERVIÇOS EXTRAS:");
+        jLabel9.setText("Serviços extras:");
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 196, -1, -1));
 
-        jCheckBoxTrocaOleo.setText("TROCA DE OLEO");
+        jCheckBoxTrocaOleo.setText("Troca de óleo ");
         jCheckBoxTrocaOleo.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 jCheckBoxTrocaOleoItemStateChanged(evt);
@@ -219,9 +224,14 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 jCheckBoxTrocaOleoMouseClicked(evt);
             }
         });
+        jCheckBoxTrocaOleo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxTrocaOleoActionPerformed(evt);
+            }
+        });
         jPanel1.add(jCheckBoxTrocaOleo, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 218, -1, -1));
 
-        jLabel11.setText("MARCA DO ÓLEO:");
+        jLabel11.setText("Marca do óleo ");
         jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, -1, -1));
 
         jComboBoxListaOleo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECIONE", "LUBRAX", "SHELL", "CASTROL", "IPIRANGA" }));
@@ -245,28 +255,43 @@ public class TelaPrincipal extends javax.swing.JFrame {
         });
         jPanel1.add(jComboBoxListaOleo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 270, 150, -1));
 
-        jLabel12.setText("PREÇO POR LITRO: ");
+        jLabel12.setText("Preço por litro: ");
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(343, 222, -1, -1));
 
         jLabelPrecoOleo.setText(" ");
         jPanel1.add(jLabelPrecoOleo, new org.netbeans.lib.awtextra.AbsoluteConstraints(453, 222, 72, -1));
 
-        jLabel13.setText("FORMA PGTO:");
+        jLabel13.setText("Forma de pagamento:");
 
         buttonGroupMetodoPgto.add(jRadioButtonAvista);
-        jRadioButtonAvista.setText("A VISTA");
+        jRadioButtonAvista.setText("A vista");
+        jRadioButtonAvista.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButtonAvistaActionPerformed(evt);
+            }
+        });
 
         buttonGroupMetodoPgto.add(jRadioButtonAte30d);
-        jRadioButtonAte30d.setText("ATÉ EM 30 D");
+        jRadioButtonAte30d.setText("Até em 30 dias");
+        jRadioButtonAte30d.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButtonAte30dActionPerformed(evt);
+            }
+        });
 
         buttonGroupMetodoPgto.add(jRadioButtonDepois30d);
         jRadioButtonDepois30d.setText("+30 D");
+        jRadioButtonDepois30d.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButtonDepois30dActionPerformed(evt);
+            }
+        });
 
-        jLabel14.setText("10% DESC");
+        jLabel14.setText("10% Desc");
 
-        jLabel15.setText("VALOR NORMAL");
+        jLabel15.setText("Valor normal");
 
-        jLabel16.setText("2% REAJUSTE");
+        jLabel16.setText("2% Reajuste");
 
         jButton1.setText("PAGAR");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -325,20 +350,20 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(453, 369, -1, 210));
 
-        jLabel19.setText("TOTAL SERV. EXTRA:");
+        jLabel19.setText("Total servico extra:");
         jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(339, 255, -1, -1));
 
         jLabelTotalServExtra.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabelTotalServExtra.setForeground(new java.awt.Color(255, 51, 51));
         jPanel1.add(jLabelTotalServExtra, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 250, 80, 20));
 
-        jLabel21.setText("DEPÓSITO ATUAL DE COMBUSTÍVEL:");
+        jLabel21.setText("Depósito atual de combustivel:");
 
-        jLabel22.setText("DIESEL");
+        jLabel22.setText("Diesel");
 
-        jLabel23.setText("ETANOL");
+        jLabel23.setText("Etanol");
 
-        jLabel24.setText("GASOLINA");
+        jLabel24.setText("Gasolina");
 
         jLabel28.setText("L");
 
@@ -398,12 +423,12 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(8, 315, 230, -1));
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(8, 315, -1, -1));
 
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel31.setText("TOTAL FINAL A PAGAR");
-        jPanel5.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(45, 13, -1, -1));
+        jLabel31.setText("Total final a pagar");
+        jPanel5.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 20, -1, -1));
 
         jLabelTotalFinal.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         jLabelTotalFinal.setForeground(new java.awt.Color(0, 0, 153));
@@ -411,10 +436,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 200, 230, 100));
 
-        jLabel18.setText("QTD:");
+        jLabel18.setText("Qtd:");
         jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 220, -1, -1));
 
-        jButtonCarrinhoOleo.setText("+ CARRINHO");
+        jButtonCarrinhoOleo.setText("+ Carrinho");
         jButtonCarrinhoOleo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonCarrinhoOleoActionPerformed(evt);
@@ -754,6 +779,26 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBoxListaOleoMouseClicked
+
+    private void jRadioButtonEtanolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonEtanolActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButtonEtanolActionPerformed
+
+    private void jCheckBoxTrocaOleoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxTrocaOleoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBoxTrocaOleoActionPerformed
+
+    private void jRadioButtonAte30dActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonAte30dActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButtonAte30dActionPerformed
+
+    private void jRadioButtonDepois30dActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonDepois30dActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButtonDepois30dActionPerformed
+
+    private void jRadioButtonAvistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonAvistaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButtonAvistaActionPerformed
 
     /**
      * @param args the command line arguments

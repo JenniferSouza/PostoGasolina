@@ -75,7 +75,7 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="jLabel1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="SELECIONE O TIPO DE COMBUST&#xcd;VEL:"/>
+                <Property name="text" type="java.lang.String" value="Selecione o tipo de combustivel:"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -107,7 +107,7 @@
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="buttonGroupTipoCombustiivel"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="GASOLINA"/>
+                <Property name="text" type="java.lang.String" value="Gasolina"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -123,8 +123,11 @@
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="buttonGroupTipoCombustiivel"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="ETANOL"/>
+                <Property name="text" type="java.lang.String" value="Etanol"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButtonEtanolActionPerformed"/>
+              </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="547" y="50" width="-1" height="-1"/>
@@ -133,41 +136,41 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="PRE&#xc7;O POR LITRO:"/>
+                <Property name="text" type="java.lang.String" value="Pre&#xe7;o por litro:"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="12" y="13" width="-1" height="-1"/>
+                  <AbsoluteConstraints x="12" y="13" width="120" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel3">
               <Properties>
-                <Property name="text" type="java.lang.String" value="DIESEL"/>
+                <Property name="text" type="java.lang.String" value="Diesel"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="12" y="36" width="-1" height="-1"/>
+                  <AbsoluteConstraints x="12" y="36" width="60" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel4">
               <Properties>
-                <Property name="text" type="java.lang.String" value="GASOLINA"/>
+                <Property name="text" type="java.lang.String" value="Gasolina"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="12" y="82" width="-1" height="-1"/>
+                  <AbsoluteConstraints x="12" y="82" width="60" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel5">
               <Properties>
-                <Property name="text" type="java.lang.String" value="ETANOL"/>
+                <Property name="text" type="java.lang.String" value="Etanol"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="12" y="59" width="-1" height="-1"/>
+                  <AbsoluteConstraints x="12" y="59" width="60" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -187,7 +190,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="88" y="82" width="-1" height="-1"/>
+                  <AbsoluteConstraints x="80" y="80" width="50" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -203,7 +206,7 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel10">
               <Properties>
-                <Property name="text" type="java.lang.String" value="LITROS"/>
+                <Property name="text" type="java.lang.String" value="Litros"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -213,7 +216,7 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel17">
               <Properties>
-                <Property name="text" type="java.lang.String" value="TOTAL COMBUST&#xcd;VEL:"/>
+                <Property name="text" type="java.lang.String" value="Total:"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -238,7 +241,7 @@
             </Component>
             <Component class="javax.swing.JButton" name="jButtonAbastecer">
               <Properties>
-                <Property name="text" type="java.lang.String" value="+ CARRINHO"/>
+                <Property name="text" type="java.lang.String" value="+ Carrinho"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonAbastecerActionPerformed"/>
@@ -286,7 +289,7 @@
         </Container>
         <Component class="javax.swing.JLabel" name="jLabel9">
           <Properties>
-            <Property name="text" type="java.lang.String" value="SERVI&#xc7;OS EXTRAS:"/>
+            <Property name="text" type="java.lang.String" value="Servi&#xe7;os extras:"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -296,11 +299,12 @@
         </Component>
         <Component class="javax.swing.JCheckBox" name="jCheckBoxTrocaOleo">
           <Properties>
-            <Property name="text" type="java.lang.String" value="TROCA DE OLEO"/>
+            <Property name="text" type="java.lang.String" value="Troca de &#xf3;leo "/>
           </Properties>
           <Events>
             <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="jCheckBoxTrocaOleoItemStateChanged"/>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jCheckBoxTrocaOleoMouseClicked"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBoxTrocaOleoActionPerformed"/>
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -310,7 +314,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel11">
           <Properties>
-            <Property name="text" type="java.lang.String" value="MARCA DO &#xd3;LEO:"/>
+            <Property name="text" type="java.lang.String" value="Marca do &#xf3;leo "/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -347,7 +351,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel12">
           <Properties>
-            <Property name="text" type="java.lang.String" value="PRE&#xc7;O POR LITRO: "/>
+            <Property name="text" type="java.lang.String" value="Pre&#xe7;o por litro: "/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -437,7 +441,7 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="jLabel13">
               <Properties>
-                <Property name="text" type="java.lang.String" value="FORMA PGTO:"/>
+                <Property name="text" type="java.lang.String" value="Forma de pagamento:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRadioButtonAvista">
@@ -445,16 +449,22 @@
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="buttonGroupMetodoPgto"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="A VISTA"/>
+                <Property name="text" type="java.lang.String" value="A vista"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButtonAvistaActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRadioButtonAte30d">
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="buttonGroupMetodoPgto"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="AT&#xc9; EM 30 D"/>
+                <Property name="text" type="java.lang.String" value="At&#xe9; em 30 dias"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButtonAte30dActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRadioButtonDepois30d">
               <Properties>
@@ -463,20 +473,23 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="+30 D"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButtonDepois30dActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel14">
               <Properties>
-                <Property name="text" type="java.lang.String" value="10% DESC"/>
+                <Property name="text" type="java.lang.String" value="10% Desc"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel15">
               <Properties>
-                <Property name="text" type="java.lang.String" value="VALOR NORMAL"/>
+                <Property name="text" type="java.lang.String" value="Valor normal"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel16">
               <Properties>
-                <Property name="text" type="java.lang.String" value="2% REAJUSTE"/>
+                <Property name="text" type="java.lang.String" value="2% Reajuste"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JButton" name="jButton1">
@@ -491,7 +504,7 @@
         </Container>
         <Component class="javax.swing.JLabel" name="jLabel19">
           <Properties>
-            <Property name="text" type="java.lang.String" value="TOTAL SERV. EXTRA:"/>
+            <Property name="text" type="java.lang.String" value="Total servico extra:"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -517,7 +530,7 @@
         <Container class="javax.swing.JPanel" name="jPanel4">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="8" y="315" width="230" height="-1"/>
+              <AbsoluteConstraints x="8" y="315" width="-1" height="-1"/>
             </Constraint>
           </Constraints>
 
@@ -590,22 +603,22 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="jLabel21">
               <Properties>
-                <Property name="text" type="java.lang.String" value="DEP&#xd3;SITO ATUAL DE COMBUST&#xcd;VEL:"/>
+                <Property name="text" type="java.lang.String" value="Dep&#xf3;sito atual de combustivel:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel22">
               <Properties>
-                <Property name="text" type="java.lang.String" value="DIESEL"/>
+                <Property name="text" type="java.lang.String" value="Diesel"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel23">
               <Properties>
-                <Property name="text" type="java.lang.String" value="ETANOL"/>
+                <Property name="text" type="java.lang.String" value="Etanol"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel24">
               <Properties>
-                <Property name="text" type="java.lang.String" value="GASOLINA"/>
+                <Property name="text" type="java.lang.String" value="Gasolina"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabelTanqueDiesel">
@@ -644,11 +657,11 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="jLabel31">
               <Properties>
-                <Property name="text" type="java.lang.String" value="TOTAL FINAL A PAGAR"/>
+                <Property name="text" type="java.lang.String" value="Total final a pagar"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="45" y="13" width="-1" height="-1"/>
+                  <AbsoluteConstraints x="60" y="20" width="-1" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -671,7 +684,7 @@
         </Container>
         <Component class="javax.swing.JLabel" name="jLabel18">
           <Properties>
-            <Property name="text" type="java.lang.String" value="QTD:"/>
+            <Property name="text" type="java.lang.String" value="Qtd:"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -681,7 +694,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButtonCarrinhoOleo">
           <Properties>
-            <Property name="text" type="java.lang.String" value="+ CARRINHO"/>
+            <Property name="text" type="java.lang.String" value="+ Carrinho"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonCarrinhoOleoActionPerformed"/>
